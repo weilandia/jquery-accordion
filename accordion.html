@@ -21,7 +21,10 @@
   </div>
 
   <script type="text/javascript">
-
+    $(".accordion-header").on("click", function() {
+      $(this).toggleClass("active")
+      $(this).next().slideToggle();
+    });
   </script>
 </body>
 </html>
